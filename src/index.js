@@ -6,6 +6,7 @@ var tweenState = require('react-tween-state');
 var {
   Image,
   StyleSheet,
+  Text,
   TouchableHighlight,
   View
 } = React;
@@ -150,6 +151,7 @@ var ProgressHUD = React.createClass({
             <View style={styles.inner_spinner}>
             </View>
           </Image>
+          <Text style={{margin:5, fontWeight:'bold'}}>{this.props.message}</Text>
         </View>
       </TouchableHighlight>
       /*jshint ignore:end */
